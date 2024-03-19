@@ -1,0 +1,96 @@
+/* manrope-800 - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 800;
+    src: url('../fonts/manrope-v15-latin-800.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+   font-family: 'Manrope';
+   font-weight: 800;
+            background-color: #202733;
+}
+img {
+    margin: 0;
+    display: flex;
+}
+.container {
+        width: 100%;
+            max-width: 1200px;
+            padding-right: 50px;
+            padding-left: 50px;
+            margin-right: auto;
+            margin-left: auto;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+}
+
+.container_box {
+    width: 540px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #313A48;
+    box-shadow: 30px 50px 80px 0px #0000001A;
+    border-radius: 10px;
+    padding: 48px;
+    position: relative;
+}
+
+.advice_title {
+    font-size: 13px;
+    line-height: 17px;
+    color: #53FFAA;
+    letter-spacing: 4px;
+    
+}
+
+.advice_p {
+    margin-top: 24px;
+    width: 446px;
+    font-size: 28px;
+    line-height: 38px;
+    text-align: center;
+    color: #CEE3E9;
+}
+.advice_img {
+    margin-top: 48px;
+    width: 100%;
+}
+
+.btn {
+    position: absolute;
+    bottom: -32px;
+    width: 64px;
+    height: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    background-color: #53FFAA;
+}
+
+@media only screen and (max-width: 600px) {
+    .container_box {
+        width: 342px;
+    }
+    .advice_title {
+        font-size: 11px;
+    } 
+    .advice_p  {
+        font-size: 24px;
+        width: 294px;
+    }
+}
